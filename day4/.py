@@ -70,101 +70,73 @@ acronym = words[0][0] + words[1][0] + words[2][0]
 print(acronym)
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
 # index() returns the position
-
-
+print(company.index('C'))
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
 # Same method as above
-
-
+print(company.index('F'))
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
 # rfind searches from the right side
-
-
+print(company.rfind('l'))
 # 23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:
 # 'You cannot end a sentence with because because because is a conjunction'
 # Put the sentence in a variable first to make life easier
-
-
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.index('because'))
 # 24. Use rindex to find the position of the last occurrence of the word because in the following sentence:
 # 'You cannot end a sentence with because because because is a conjunction'
 # rindex is like searching from the right
-
-
+sentence_one = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence_one.rindex('because'))
 # 25. Slice out the phrase 'because because because' in the following sentence:
 # 'You cannot end a sentence with because because because is a conjunction'
 # Find the start and end, then slice
-
-
+sentence_two = 'You cannot end a sentence with because because because is a conjunction'
+start = sentence_two.find('because')
+end = sentence_two.rfind('because') + len('because')
+print(sentence_two[start:end])
 # 26. Find the position of the first occurrence of the word 'because' in the following sentence:
 # 'You cannot end a sentence with because because because is a conjunction'
 # This repeats an earlier one, so you can reuse the same idea
-
-
-# 27. Slice out the phrase 'because because because' in the following sentence:
-# 'You cannot end a sentence with because because because is a conjunction'
-# This also repeats, so don't overthink it
-
-
+print(sentence.index('because'))
 # 28. Does 'Coding For All' start with a substring Coding?
 # startswith()
-
-
+print(company.startswith('Coding'))
 # 29. Does 'Coding For All' end with a substring coding?
 # endswith()
 # Watch the lowercase c here
-
-
+print(company.endswith('Coding'))
 # 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
 # strip() removes spaces from both ends
-
+company_new = '   Coding For All      '
+print(company_new.strip())
 
 # 31. Which one of the following variables return True when we use the method isidentifier():
-# 30DaysOfPython
-# thirty_days_of_python
+a = '30DaysOfPython'
+b = 'thirty_days_of_python'
 # Try isidentifier() on both
-
-
+print(a.isidentifier())
+print(b.isidentifier())
 # 32. The following list contains the names of some of python libraries:
-# ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'].
+a = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 # Join the list with a hash with space string.
-# Use " # ".join(...)
-
-
+formated_a = ' # '.join (a)
+print(formated_a)
 # 33. The following list contains the names of some of python libraries:
-# ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'].
+b = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 # Join the list with a hash with space string.
 # Yes, this is repeated in your sheet, so you can do it again or leave a note
-
-
+formatb = ' # ' .join(a)
+print(formatb)
 # 34. Use the new line escape sequence to separate the following sentences.
-# I am enjoying this challenge.
-# I just wonder what is next.
 # New line escape sequence is \n
+print('I am enjoying this challenge.\nI just wonder what is next.')
 
 
 # 35. Use a tab escape sequence to write the following lines.
 # Name      Age     Country   City
 # Asabeneh  250     Finland   Helsinki
 # Tab escape sequence is \t
-
-
-# 36. Use the string formatting method to display the following:
-# radius = 10
-# area = 3.14 * radius ** 2
-# The area of a circle with radius 10 is 314 meters square.
-# Good practice for f-strings or format()
-
-
-# 37. Make the following using string formatting methods:
-# 8 + 6 = 14
-# 8 - 6 = 2
-# 8 * 6 = 48
-# 8 / 6 = 1.33
-# 8 % 6 = 2
-# 8 // 6 = 1
-# 8 ** 6 = 262144
-# Best done with variables a and b
-
+print('Name\t Age\t Country\t City \nAsabeneh\t 250\t Finland\t Helsinki\n')
 
 
 # 🎉 CONGRATULATIONS !
