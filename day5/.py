@@ -166,4 +166,4 @@ countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
 countries_one, countries_two, countries_three, *scandic = countries
 print(scandic)
 # Hint:
-# first, second, third, *scandic = countries
+# first, second, third, *scandic = countries hf
