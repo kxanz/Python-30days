@@ -8,8 +8,6 @@
 # 1. Declare an empty list
 # Hint: use [] or list()
 from calendar import firstweekday
-import re
-from turtle import back
 
 
 lst = list()
