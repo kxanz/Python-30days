@@ -41,4 +41,4 @@ student_dictionary.pop('first_name')
 # 11. Delete one of the dictionaries
 del student_dictionary
 
-# 🎉 CONGRATULATIONS ! 🎉
+# 🎉 CONGRATULATIONS 🎉
